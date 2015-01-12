@@ -12,11 +12,21 @@
 
 p {
 	font-family: "BLOKKRegular";
-	font-size: 10px;
+	font-size: 12px;
+	line-height: 14px
 }
 
 body, h1, h2, h3, h4, h5 {
 	font-family: 'Open Sans Condensed', sans-serif !important;
+	z-index: 1;
+}
+
+nav{
+	z-index: 999 !important;
+}
+
+footer{
+	text-align: center;
 }
 
 .title-overlay h1.cursive {
@@ -49,6 +59,9 @@ h2.cursive {
 	padding: 25px 0;
 }
 
+.spacer{
+	height:40px;
+}
 
 /* 
 **********************************
@@ -58,14 +71,25 @@ Color Controls
 **********************************
 */
 
-.color1{
-	background: #F99;
-}
-
 .nocolor{
-	background: #eee;
+	background: #eee !important;
 }
 
+.color1{
+	background: #F99 !important;
+}
+
+.color2{
+	background: #9FF !important;
+}
+
+.color3{
+	background: #99F !important;
+}
+
+.color4{
+	background: #333 !important;
+}
 
 /* 
 **********************************
@@ -74,22 +98,44 @@ Schedule Box
 
 **********************************
 */
+.schedule-row{
+	z-index: 1 !important;
+}
 .schedule-box{
 	padding: 20px;
-	vertical-align: top
+	vertical-align: top;
 }
 
 .schedule-row .date{
 	font-size: 18px;
 	font-weight: bold;
+	border: 1px solid black;
+	border-radius: 10px;
+	padding: 0px;
+	overflow: hidden;
 }
 
 .schedule-row .date .day{
 	font-size: 40px;
+	padding: 0px 5px;
+}
+
+.schedule-row .date .month{
+	padding: 10px 5px;
 }
 
 .schedule-row .detail{
 	font-size: 10px;
+}
+
+.schedule-row .detail h1{
+	font-size: 20px;
+	margin: 3px 0 0 0;
+}
+
+.schedule-row .detail h2{
+	font-size: 16px;
+	margin: 0;
 }
 
 
@@ -102,10 +148,10 @@ Gallery
 **********************************
 */
 
-img {
+.gallery img {
 	border-radius: 10px;
 	display: inline-block;
-	padding: 20px;
+	margin: 20px;
 
 }
 
@@ -127,11 +173,12 @@ Navbar
 }
 
 .btn-primary:not(.btn-link):not(.btn-flat):hover{
-	background: #F99;
+	background: #4285f4;
 }
 
 .nav-centered{
   text-align:center !important;
+  z-index: 999
 }
 #nav.affix {
     position: fixed;
@@ -184,7 +231,7 @@ Full-wdith image stuff
 .image-bg-fluid-height {
 	background: url('../img/logsit-cropped.jpg') no-repeat center center scroll;
 	background-color: #933;
-    padding: 350px 0 50px;
+    padding: 350px 0 100px;
 }
 
 .image-bg-fixed-height {

@@ -6,6 +6,7 @@
         <title>Brad and Cat's Wedding</title>
         <link href="css/tfgm.css" rel="stylesheet">
         <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/timeline.css" rel="stylesheet">
         <link href="dist/css/ripples.min.css" rel="stylesheet">
         <link href="dist/css/material-wfont.css" rel="stylesheet">
         <link href="css/snackbar.min.css" rel="stylesheet">
@@ -19,6 +20,9 @@
         <script src="dist/js/material.min.js"></script>
         <script src="js/snackbar.js"></script>
         <script src="js/jquery.nouislider.min.js"></script>
+        <script src="js/modernizr.js"></script>
+        <script src="js/timeline.js"></script>
+
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -38,14 +42,14 @@
     </header>
 
     <div id="nav-wrapper">
-        <nav class="navbar navbar-inverse" role="navigation" id="nav">
+        <nav class="navbar navbar-inverse shadow-z-3 color3" role="navigation" id="nav">
           <div class="container">
             <div id="navbar" class="nav-centered">
               <ul class="nav navbar-nav">
                 <li class=""><a href="#story">Our Story</a></li>
                 <li><a href="#about">Event Details</a></li>
                 <li class="rsvp">
-                    <a href="http://rsvp.theyrefinallygettingmarried.com" class="btn btn-primary btn-raised shadow-z-4 nav-rsvp">RSVP</a>
+                    <a href="http://rsvp.theyrefinallygettingmarried.com" class="btn btn-primary btn-raised shadow-z-4 nav-rsvp color4">RSVP</a>
                 </li>
                 <li><a href="#gallery">Gallery</a></li>
                 <li><a href="#registry">Registry</a></li>
@@ -54,7 +58,7 @@
           </div>
         </nav>
     </div>
-    <section  id="story" class="nocolor">
+    <section id="top" class="nocolor">
         <div class="container">
             <div class="row" style="text-align:center">
                 <h1>Welcome</h1>
@@ -70,34 +74,165 @@
                 </h2>
             </div>
           </div>
+          <div class="spacer" id="story"></div>
+          <div class="container">
+            <div class="well">
+                <div style="text-align: center"><h1>Our Story</h1></div>
+                <p>
+                    Donec egestas, felis et consectetur posuere, arcu odio scelerisque neque, vitae vulputate neque libero vitae nisl. Duis et ex ipsum. Curabitur et nunc eu nibh auctor varius id sollicitudin tortor. Sed a mi efficitur, efficitur velit sed, scelerisque erat. Nulla porttitor diam in ligula interdum egestas. Etiam nec justo nec mauris iaculis porta nec id diam. Vivamus semper suscipit nulla, a dignissim nisi pharetra ac.
+                </p>
+                <p>
+                    Donec egestas, felis et consectetur posuere, arcu odio scelerisque neque, vitae vulputate neque libero vitae nisl. Duis et ex ipsum. Curabitur et nunc eu nibh auctor varius id sollicitudin tortor. Sed a mi efficitur, efficitur velit sed, scelerisque erat. Nulla porttitor diam in ligula interdum egestas. Etiam nec justo nec mauris iaculis porta nec id diam. Vivamus semper suscipit nulla, a dignissim nisi pharetra ac.
+                </p>
+                <div style="text-align: center"><h3>Timeline</h3></div>
+                <!-- Timeline -->
+                <section id="cd-timeline" class="cd-container">
+                    <div class="cd-timeline-block">
+                        <div class="cd-timeline-img cd-picture">
+                            <img src="img/cd-icon-picture.svg" alt="Picture">
+                        </div> <!-- cd-timeline-img -->
+
+                        <div class="cd-timeline-content">
+                            <h2>Title of section 1</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde? Iste voluptatibus minus veritatis qui ut.</p>
+                            <a href="#0" class="cd-read-more">Read more</a>
+                            <span class="cd-date">Jan 14</span>
+                        </div> <!-- cd-timeline-content -->
+                    </div> <!-- cd-timeline-block -->
+
+                    <div class="cd-timeline-block">
+                        <div class="cd-timeline-img cd-movie">
+                            <img src="img/cd-icon-movie.svg" alt="Movie">
+                        </div> <!-- cd-timeline-img -->
+
+                        <div class="cd-timeline-content">
+                            <h2>Title of section 2</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde?</p>
+                            <a href="#0" class="cd-read-more">Read more</a>
+                            <span class="cd-date">Jan 18</span>
+                        </div> <!-- cd-timeline-content -->
+                    </div> <!-- cd-timeline-block -->
+
+                    <div class="cd-timeline-block">
+                        <div class="cd-timeline-img cd-picture">
+                            <img src="img/cd-icon-picture.svg" alt="Picture">
+                        </div> <!-- cd-timeline-img -->
+
+                        <div class="cd-timeline-content">
+                            <h2>Title of section 3</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, obcaecati, quisquam id molestias eaque asperiores voluptatibus cupiditate error assumenda delectus odit similique earum voluptatem doloremque dolorem ipsam quae rerum quis. Odit, itaque, deserunt corporis vero ipsum nisi eius odio natus ullam provident pariatur temporibus quia eos repellat consequuntur perferendis enim amet quae quasi repudiandae sed quod veniam dolore possimus rem voluptatum eveniet eligendi quis fugiat aliquam sunt similique aut adipisci.</p>
+                            <a href="#0" class="cd-read-more">Read more</a>
+                            <span class="cd-date">Jan 24</span>
+                        </div> <!-- cd-timeline-content -->
+                    </div> <!-- cd-timeline-block -->
+
+                    <div class="cd-timeline-block">
+                        <div class="cd-timeline-img cd-location">
+                            <img src="img/cd-icon-location.svg" alt="Location">
+                        </div> <!-- cd-timeline-img -->
+
+                        <div class="cd-timeline-content">
+                            <h2>Title of section 4</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde? Iste voluptatibus minus veritatis qui ut.</p>
+                            <a href="#0" class="cd-read-more">Read more</a>
+                            <span class="cd-date">Feb 14</span>
+                        </div> <!-- cd-timeline-content -->
+                    </div> <!-- cd-timeline-block -->
+
+                    <div class="cd-timeline-block">
+                        <div class="cd-timeline-img cd-location">
+                            <img src="img/cd-icon-location.svg" alt="Location">
+                        </div> <!-- cd-timeline-img -->
+
+                        <div class="cd-timeline-content">
+                            <h2>Title of section 5</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum.</p>
+                            <a href="#0" class="cd-read-more">Read more</a>
+                            <span class="cd-date">Feb 18</span>
+                        </div> <!-- cd-timeline-content -->
+                    </div> <!-- cd-timeline-block -->
+
+                    <div class="cd-timeline-block">
+                        <div class="cd-timeline-img cd-movie">
+                            <img src="img/cd-icon-movie.svg" alt="Movie">
+                        </div> <!-- cd-timeline-img -->
+
+                        <div class="cd-timeline-content">
+                            <h2>Final Section</h2>
+                            <p>This is the content of the last section</p>
+                            <span class="cd-date">Feb 26</span>
+                        </div> <!-- cd-timeline-content -->
+                    </div> <!-- cd-timeline-block -->
+                </section> <!-- cd-timeline -->
+                <!-- End Timeline -->
+            </div>
+          </div>
         </div><!-- /.container -->
     </section>
-    <section id="about" class="color1">
+    <div class="spacer" id="about"></div>
+
+    <section class="color1">
         <div class="container">
-            <div class="row" style="text-align:center">
+            <div style="text-align:center">
                 <h1 >Event Details</h1>
                 <p>
                     Donec egestas, felis et consectetur posuere, arcu odio scelerisque neque, vitae vulputate neque libero vitae nisl. Duis et ex ipsum. Curabitur et nunc eu nibh auctor varius id sollicitudin tortor. Sed a mi efficitur, efficitur velit sed, scelerisque erat. Nulla porttitor diam in ligula interdum egestas. Etiam nec justo nec mauris iaculis porta nec id diam. Vivamus semper suscipit nulla, a dignissim nisi pharetra ac.
                 </p>
                 <p><img src="http://lorempixel.com/g/800/300/city" /></p>
+                <div class="spacer" id="schedule"></div>
                 <div class="schedule-box nocolor shadow-z-2">
                     <h2>Schedule</h2>
                     <div class="row schedule-row">
-                        <div class="date col-md-2">
-                            <div class="time">
-                            9:30am
-                            <br>to
-                            <br>11:30am
-                            </div>
+                        <div class="date col-md-1 col-md-offset-1">
+                            <div class="time">9:30am</div>
                             <div class="day tcolor-1">19</div>
-                            <div class="month">Sept</div>
+                            <div class="month color2">Sept</div>
                         </div>
-                        <div class="detail col-md-10">
+                        <div class="detail col-md-8">
                             <h1>Main Ceremony</h1>
                             <h2>Pulgas Water Temple</h2>
                             <p>
-                                Donec egestas, felis et consectetur posuere, arcu odio scelerisque neque, vitae vulputate neque libero vitae nisl. Duis et ex ipsum. Curabitur et nunc eu nibh auctor varius id sollicitudin tortor. Sed a mi efficitur, efficitur velit sed, scelerisque erat. 
+                                The main ceremony will start promptly at 10:30am. Please arrive by 10am to ensure you are seated and ready. There is limited parking at the site, so we <b>strongly encourage people to carpool</b>. 
                             </p>
+                        </div>
+                        <div class="sitepic col-md-2">
+                            <img src="http://lorempixel.com/160/200/city/1" />
+                        </div>
+                    </div>
+                
+                    <div class="row schedule-row">
+                        <div class="date col-md-1 col-md-offset-1">
+                            <div class="time">Noon</div>
+                            <div class="day tcolor-1">19</div>
+                            <div class="month color2">Sept</div>
+                        </div>
+                        <div class="detail col-md-8">
+                            <h1>Tea Ceremony</h1>
+                            <h2>Tom &amp; My's House</h2>
+                            <p>
+                                The main ceremony will start promptly at 10:30am. Please arrive by 10am to ensure you are seated and ready. There is limited parking at the site, so we <b>strongly encourage people to carpool</b>. 
+                            </p>
+                        </div>
+                        <div class="sitepic col-md-2">
+                            <img src="http://lorempixel.com/160/200/city/1" />
+                        </div>
+                    </div>
+                
+                    <div class="row schedule-row">
+                        <div class="date col-md-1 col-md-offset-1">
+                            <div class="time">6pm</div>
+                            <div class="day tcolor-1">19</div>
+                            <div class="month color2">Sept</div>
+                        </div>
+                        <div class="detail col-md-8">
+                            <h1>Dinner Reception</h1>
+                            <h2>Mayflower Restaurant</h2>
+                            <p>
+                                The main ceremony will start promptly at 10:30am. Please arrive by 10am to ensure you are seated and ready. There is limited parking at the site, so we <b>strongly encourage people to carpool</b>. 
+                            </p>
+                        </div>
+                        <div class="sitepic col-md-2">
+                            <img src="http://lorempixel.com/160/200/city/1" />
                         </div>
                     </div>
                 </div>
@@ -105,26 +240,64 @@
           </div>
         </div><!-- /.container -->
     </section>
+    <div class="spacer" id="gallery"></div>
 
     <section  id="gallery" class="nocolor">
         <div class="container">
             <div class="row" style="text-align:center">
                 <h1>Gallery</h1>
                 <div class="gallery">
-                    <img src="http://lorempixel.com/200/200/people/1" />
+                    <img src="http://lorempixel.com/g/200/200/people/6" />
                     <img src="http://lorempixel.com/200/200/people/2" />
                     <img src="http://lorempixel.com/200/200/people/3" />
                     <img src="http://lorempixel.com/200/200/people/4" />
                     <img src="http://lorempixel.com/200/200/people/5" />
                     <img src="http://lorempixel.com/200/200/people/6" />
-                    <img src="http://lorempixel.com/200/200/people/7" />
+                    <img src="http://lorempixel.com/g/200/200/people/1" />
                     <img src="http://lorempixel.com/200/200/people/8" />
+                    <img src="http://lorempixel.com/200/200/people/9" />
+                    <img src="http://lorempixel.com/200/200/people/10" />
+                    <img src="http://lorempixel.com/200/200/people/7" />
+                    <img src="http://lorempixel.com/g/200/200/people/2" />
 
                 </div>
             </div>
           </div>
         </div><!-- /.container -->
     </section>
+    <div class="spacer" id="registry"></div>
+
+    <section class="color2">
+        <div class="container">
+            <div class="row" style="text-align:center">
+                <h1>Gift Registry</h1>
+                <p>
+                    Want to get us some things? Here's the place to do that! 
+                </p>
+                <div class="reg-btns">
+                    <a class="btn btn-default btn-raised color3" href="#">Amazon Wishlist</a>
+                    <a class="btn btn-default btn-raised color1" href="#">Crate &amp; Barrel</a>
+                </div>
+                <h2>Chinese Tradition</h2>
+                <p>
+                    In the Chinese tradition, family members often choose to donate money to the young couple in order to give them a strong start. If you're interested in that option, you may donate to the Honeyfund or read a bit more about it.
+                </p>
+                <div class="reg-btns">
+                    <a class="btn btn-default btn-raised color1" href="#">Honeyfund</a>
+                    <a class="btn btn-default btn-raised color3" href="#">Read More</a>
+                </div>
+            </div>
+          </div>
+        </div><!-- /.container -->
+    </section>
+
+    <footer class="nocolor">
+        <div class="container" style="padding: 40px">
+            <div class="row">
+                <a href="mailto:us@theyrefinallygettingmarried.com" class="btn btn-default btn-raised color4">Contact Us</a>
+            </div>
+        </div>
+    </footer>
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
@@ -138,6 +311,8 @@
             $('#nav').affix({
                 offset: { top: $('#nav').offset().top }
             });
+
+
         })
     </script>
   </body>
