@@ -1,0 +1,230 @@
+/* Blokk font for mockups */
+
+@font-face {
+    font-family: 'BLOKKRegular';
+    src: url('BLOKKRegular.eot');
+    src: url('BLOKKRegular.eot?#iefix') format('embedded-opentype'),
+         url('BLOKKRegular.woff') format('woff'),
+         url('BLOKKRegular.svg#BLOKKRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+p {
+	font-family: "BLOKKRegular";
+	font-size: 10px;
+}
+
+body, h1, h2, h3, h4, h5 {
+	font-family: 'Open Sans Condensed', sans-serif !important;
+}
+
+.title-overlay h1.cursive {
+	font-family: 'Sacramento', cursive !important;
+	font-size: 50px;
+	margin: 0px 0;
+	font-weight: bold;
+}
+
+h1.cursive {
+	font-family: 'Sacramento', cursive !important;
+	font-size: 40px;
+	margin: 30px 0;
+}
+h2.cursive {
+	font-family: 'Sacramento', cursive !important;
+	font-size: 28px;
+	margin: 20px 0 0;
+	line-height: 18px
+}
+
+.title-overlay h2.cursive{
+	font-family: 'Sacramento', cursive !important;
+	font-size: 35px;
+	margin: 0px 0;
+	font-weight: bold;
+}
+.title-overlay{
+	background: rgba(255,255,255,0.7);
+	padding: 25px 0;
+}
+
+
+/* 
+**********************************
+
+Color Controls
+
+**********************************
+*/
+
+.color1{
+	background: #F99;
+}
+
+.nocolor{
+	background: #eee;
+}
+
+
+/* 
+**********************************
+
+Schedule Box
+
+**********************************
+*/
+.schedule-box{
+	padding: 20px;
+	vertical-align: top
+}
+
+.schedule-row .date{
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.schedule-row .date .day{
+	font-size: 40px;
+}
+
+.schedule-row .detail{
+	font-size: 10px;
+}
+
+
+
+/* 
+**********************************
+
+Gallery
+
+**********************************
+*/
+
+img {
+	border-radius: 10px;
+	display: inline-block;
+	padding: 20px;
+
+}
+
+/* 
+**********************************
+
+Navbar 
+
+**********************************
+*/
+
+.navbar .nav,
+.navbar .nav > li {
+  float:none;
+  display:inline-block;
+  *display:inline; /* ie7 fix */
+  *zoom:1; /* hasLayout ie7 trigger */
+  vertical-align: top;
+}
+
+.btn-primary:not(.btn-link):not(.btn-flat):hover{
+	background: #F99;
+}
+
+.nav-centered{
+  text-align:center !important;
+}
+#nav.affix {
+    position: fixed;
+    top: 0;
+    width: 100%
+}
+
+#nav > .navbar-nav {
+    border-left: 0;
+    border-right: 0;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -o-border-radius: 0;
+}
+
+.nav-rsvp {
+	margin: -10px 5px !important;
+	height: 80px;
+	line-height: 40px !important;
+	border-radius: 10px !important;
+}
+
+ul.navbar-nav li{
+	width: 120px;
+}
+
+ul.navbar-nav li.rsvp{
+	width: 78px;
+}
+
+
+/* 
+**********************************
+
+Full-wdith image stuff
+
+**********************************
+*/ 
+
+.image-bg-fluid-height,
+.image-bg-fixed-height {
+    text-align: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+.image-bg-fluid-height {
+	background: url('../img/logsit-cropped.jpg') no-repeat center center scroll;
+	background-color: #933;
+    padding: 350px 0 50px;
+}
+
+.image-bg-fixed-height {
+	background: url('http://lorempixel.com/g/1920/500/') no-repeat center center scroll;
+    height: 450px;
+}
+
+.img-center {
+	margin: 0 auto;
+}
+
+section {
+    padding: 30px 0;
+}
+
+.section-heading {
+    margin: 30px 0;
+    font-size: 4em;
+}
+
+.section-lead {
+    margin: 30px 0;
+}
+
+.section-paragraph {
+    margin: 30px 0;
+}
+
+@media(max-width:768px) {
+    section {
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+
+    .section-heading {
+        font-size: 2em;
+    }
+}
+
+.headerimg{
+	background-image: url('../img/logsit.jpg');
+	background-size: cover;
+}
